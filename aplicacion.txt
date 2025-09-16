@@ -1,0 +1,66 @@
+Jossue Ferrua:
+
+   static void Main()
+
+    {
+
+        Console.WriteLine("=== Bienvenido a la Máquina Expendedora ===\n");
+
+
+        Console.WriteLine("Seleccione una categoría:");
+
+        Console.WriteLine("1. Snacks");
+
+        Console.WriteLine("2. Bebidas");
+
+        Console.WriteLine("3. Dulces");
+
+        Console.Write("Ingrese el número de su elección: ");
+
+        string categoria = Console.ReadLine();
+
+
+
+        switch (categoria)
+
+        {
+
+            case "1": // Snacks
+
+                Console.WriteLine("\n--- Snacks ---");
+
+                Console.WriteLine("a. Papas fritas - $2");
+
+                Console.WriteLine("b. Galletas saladas - $1.5");
+
+                Console.Write("Elija un producto: ");
+
+                string snack = Console.ReadLine();
+
+
+
+                if (snack == "a")
+
+                {
+
+                    Console.WriteLine("Has elegido Papas fritas. Total: $2");
+
+                }
+
+                else if (snack == "b")
+
+                {
+
+                    Console.WriteLine("Has elegido Galletas saladas. Total: $1.5");
+
+                }
+
+                else
+
+                {
+
+                    Console.WriteLine("Opción inválida en Snacks.");
+
+                }
+
+                break;
