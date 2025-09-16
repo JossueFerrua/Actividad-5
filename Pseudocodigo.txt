@@ -1,0 +1,57 @@
+INICIO
+MOSTRAR "=== Bienvenido a la Máquina Expendedora ==="
+MOSTRAR "Seleccione una categoría:"
+MOSTRAR "1. Snacks"
+MOSTRAR "2. Bebidas"
+MOSTRAR "3. Dulces"
+MOSTRAR "Ingrese el número de su elección: "
+LEER categoria
+SI categoria ES "1" ENTONCES
+    MOSTRAR "--- Snacks ---"
+    MOSTRAR "a. Papas fritas - $2"
+    MOSTRAR "b. Galletas saladas - $1.5"
+    MOSTRAR "Elija un producto: "
+    LEER snack
+
+    SI snack ES "a" ENTONCES
+        MOSTRAR "Has elegido Papas fritas. Total: $2"
+    SINO SI snack ES "b" ENTONCES
+        MOSTRAR "Has elegido Galletas saladas. Total: $1.5"
+    SINO
+        MOSTRAR "Opción inválida en Snacks."
+    FIN SI
+SINO SI categoria ES "2" ENTONCES
+    MOSTRAR "--- Bebidas ---"
+    MOSTRAR "a. Agua - $1"
+    MOSTRAR "b. Refresco - $1.5"
+    MOSTRAR "Elija un producto: "
+    LEER bebida
+
+    SI bebida ES "a" ENTONCES
+        MOSTRAR "Has elegido Agua. Total: $1"
+    SINO SI bebida ES "b" ENTONCES
+        MOSTRAR "Has elegido Refresco. Total: $1.5"
+    SINO
+        MOSTRAR "Opción inválida en Bebidas."
+    FIN SI
+SINO SI categoria ES "3" ENTONCES
+    MOSTRAR "--- Dulces ---"
+    MOSTRAR "a. Chocolate - $2"
+    MOSTRAR "b. Caramelos - $1"
+    MOSTRAR "Elija un producto: "
+    LEER dulce
+
+    SI dulce ES "a" ENTONCES
+        MOSTRAR "Has elegido Chocolate. Total: $2"
+    SINO SI dulce ES "b" ENTONCES
+        MOSTRAR "Has elegido Caramelos. Total: $1"
+    SINO
+        MOSTRAR "Opción inválida en Dulces."
+    FIN SI
+SINO
+    MOSTRAR "Categoría inválida. Por favor ingrese 1, 2 o 3."
+FIN SI
+
+MOSTRAR "Gracias por usar la Máquina Expendedora!"
+
+FIN
