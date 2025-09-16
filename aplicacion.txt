@@ -64,3 +64,103 @@ Jossue Ferrua:
                 }
 
                 break;
+
+            case "2": // Bebidas
+
+                Console.WriteLine("\n--- Bebidas ---");
+
+                Console.WriteLine("a. Agua - $1");
+
+                Console.WriteLine("b. Refresco - $1.5");
+
+                Console.Write("Elija un producto: ");
+
+                string bebida = Console.ReadLine();
+
+
+
+                if (bebida == "a")
+
+                {
+
+                    Console.WriteLine("Has elegido Agua. Total: $1");
+
+                }
+
+                else if (bebida == "b")
+
+                {
+
+                    Console.WriteLine("Has elegido Refresco. Total: $1.5");
+
+                }
+
+                else
+
+                {
+
+                    Console.WriteLine("Opción inválida en Bebidas.");
+
+                }
+
+                break;
+
+
+
+            case "3": // Dulces
+
+                Console.WriteLine("\n--- Dulces ---");
+
+                Console.WriteLine("a. Chocolate - $2");
+
+                Console.WriteLine("b. Caramelos - $1");
+
+                Console.Write("Elija un producto: ");
+
+                string dulce = Console.ReadLine();
+
+
+
+                if (dulce == "a")
+
+                {
+
+                    Console.WriteLine("Has elegido Chocolate. Total: $2");
+
+                }
+
+                else if (dulce == "b")
+
+                {
+
+                    Console.WriteLine("Has elegido Caramelos. Total: $1");
+
+                }
+
+                else
+
+                {
+
+                    Console.WriteLine("Opción inválida en Dulces.");
+
+                }
+
+                break;
+
+
+
+            default:
+
+                Console.WriteLine("Categoría inválida. Por favor ingrese 1, 2 o 3.");
+
+                break;
+
+        }
+
+
+
+        Console.WriteLine("\nGracias por usar la Máquina Expendedora!");
+
+    }
+
+}
